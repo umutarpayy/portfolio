@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Proje Adı</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Dark tema genel ayarları */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #1f1f1f;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .project-header {
+            background-image: url('images/image_1.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: #ffffff;
+            text-align: center;
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .project-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .project-header p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+        .content-section {
+            background-color: #1e1e1e;
+            padding: 50px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+            margin-top: -80px;
+            border-radius: 10px;
+            color: #ddd;
+        }
+        .content-section h3, .content-section h4 {
+            color: #ffffff;
+        }
+        .content-section p, .content-section ul {
+            color: #cccccc;
+        }
+        .content-section ul li::before {
+            content: "✔";
+            margin-right: 10px;
+            color: #007bff;
+        }
+        .btn-primary-custom {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-primary-custom:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#section-home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#section-portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#section-about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#section-contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1>TPNG</h1>
+            <p>Proje kısa açıklaması ve genel amacı burada yer alır.</p>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+        <div class="container">
+            <div class="content-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/cv.png" class="img-fluid rounded mb-4" alt="Proje Resmi">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Proje Özeti</h3>
+                        <p>Bu projede, veri analizi ve görselleştirme teknikleri kullanılarak elde edilen sonuçlar analiz edilmiştir. Ayrıca, makine öğrenmesi modelleriyle performans iyileştirmeleri sağlanmıştır.</p>
+
+                        <h4>Kullanılan Teknolojiler:</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML & CSS</li>
+                            <li>Machine Learning</li>
+                        </ul>
+
+                        <h4>Proje Özellikleri:</h4>
+                        <ul>
+                            <li>Veri Analizi</li>
+                            <li>Web Scraping</li>
+                            <li>Gerçek Zamanlı Görselleştirme</li>
+                        </ul>
+
+                        <a href="#" class="btn btn-primary-custom mt-4">Canlı Projeyi Gör</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+</body>
+</html>
